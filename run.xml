@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<test thread-count="1" name="Test">
+		<classes>
+		  	<class name="genericFeatures.FileUtilities" />
+			<class name="testRuns.InitialiseSDK" />
+			<!-- <class name="testRuns.HomeScreenTest" />
+			<class name="testRuns.CardPaymentScreenTest" />
+			<class name="testRuns.BankTransferScreenTest" />
+			<class name="testRuns.HomeWalletTest" />
+	    	<class name="testRuns.InitiateAndConfirmWalletTest" /> -->
+		</classes>
+	</test>
+    <test thread-count="1" name="home">
+		<classes>
+			<class name="testRuns.HomeScreenTest" />
+		</classes>
+	</test>
+	<test name="cardSave">
+ 		<classes>
+			<class name="testRuns.CardSaveScreenTest" />
+		</classes>
+	</test>
+ 	 <test thread-count="1" name="wallet">
+		<classes>
+			<class name="testRuns.HomeWalletTest" />
+		</classes>
+	</test>
+	<test name="bank">
+		<classes>
+			<class name="testRuns.BankTransferScreenTest" />
+		</classes>
+	</test>
+	<test name="card">
+		<classes>
+			<class name="testRuns.CardPaymentScreenTest" />
+		</classes>
+	</test>
+    <test name="initiateWallet">
+ 		<classes>
+			<class name="testRuns.InitiateAndConfirmWalletTest" />
+		</classes>
+	</test>
+
+</suite>
+

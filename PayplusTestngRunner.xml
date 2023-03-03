@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNGSuite">
+	<listeners>
+	<listener class-name="genericFeatures.ExtentReporterNG"/>
+	</listeners>
+	
+  <test name="TestNGPayPlus">
+    <classes>
+	<class name="testRunsiOS.CardTest"></class>
+	<class name="testRunsiOS.HomescreenTest"></class>
+	<class name="testRunsiOS.NetbankingTest"></class>
+	<class name="testRunsiOS.WalletTest"></class>
+	<class name="testRunsiOS.EMITest"></class>
+	<class name="testRunsiOS.ThreeDSecureTest"></class>
+	
+      <!--class name="testRuns.InitiateAndConfirmWalletTest"/>
+      <class name="testRuns.InitialiseSDK"/>
+      <class name="testRuns.CardPaymentScreenTest"/>
+      <class name="testRuns.CardSaveScreenTest"/>
+      <class name="testRuns.BankTransferScreenTest"/>
+      <class name="testRuns.HomeWalletTest"/>
+      <class name="genericFeatures.FileUtilities"/>-->
+    </classes>
+  </test> <!-- TestNGPayPlus -->
+</suite> <!-- TestNGSuite -->
